@@ -1,3 +1,6 @@
+##### using bfast to decompose time series
+##### csv.  row: records;   col:observations in each temporal interval
+
 rm(list=ls())
 #Sys.setenv(JAVA_HOME='C:/Program Files/Java/jdk1.7.0_75')
 library(bfast)
@@ -7,7 +10,7 @@ h=0.15
 frequency1=12
 max_iter=3
 path1="D:\\SchoolWorks\\Research\\Long term Gaussian\\TEST\\Seasonal Effect\\BFAST_out test\\Hangzhou_bfast.csv"
-#path1="D:\\SchoolWorks\\Research\\Long term Gaussian\\出图数据\\sensitivity\\seasonal Test.csv"
+#path1="D:\\SchoolWorks\\Research\\Long term Gaussian\\鍑哄浘鏁版嵁\\sensitivity\\seasonal Test.csv"
 
 #input and preprocessing
 system.time({
@@ -52,9 +55,9 @@ system.time({
     }
   }
 })
-#write.csv(trend_cp,"D:\\SchoolWorks\\Research\\Long term Gaussian\\出图数据\\sensitivity\\trend_cp.csv")
-#write.csv(season_cp,"D:\\SchoolWorks\\Research\\Long term Gaussian\\出图数据\\sensitivity\\season_cp.csv")
-#write.csv(residual_cp,"D:\\SchoolWorks\\Research\\Long term Gaussian\\出图数据\\sensitivity\\residual_cp.csv")
-#write.csv(tr_bp,"D:\\SchoolWorks\\Research\\Long term Gaussian\\出图数据\\sensitivity\\tr_bp.csv")
-#write.csv(sn_bp,"D:\\SchoolWorks\\Research\\Long term Gaussian\\出图数据\\sensitivity\\sn_bp.csv")
+#write.csv(trend_cp,"D:\\SchoolWorks\\Research\\Long term Gaussian\\鍑哄浘鏁版嵁\\sensitivity\\trend_cp.csv")
+#write.csv(season_cp,"D:\\SchoolWorks\\Research\\Long term Gaussian\\鍑哄浘鏁版嵁\\sensitivity\\season_cp.csv")
+#write.csv(residual_cp,"D:\\SchoolWorks\\Research\\Long term Gaussian\\鍑哄浘鏁版嵁\\sensitivity\\residual_cp.csv")
+#write.csv(tr_bp,"D:\\SchoolWorks\\Research\\Long term Gaussian\\鍑哄浘鏁版嵁\\sensitivity\\tr_bp.csv")
+#write.csv(sn_bp,"D:\\SchoolWorks\\Research\\Long term Gaussian\\鍑哄浘鏁版嵁\\sensitivity\\sn_bp.csv")
 
